@@ -56,43 +56,109 @@
             app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
         <TextView
-            android:background="@drawable/tv_bacground"
+            android:id="@+id/textView4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/_3"
             android:layout_marginStart="20dp"
+            android:background="@drawable/tv_bacground"
+            android:text="@string/_3"
             android:textSize="15sp"
             android:textStyle="bold"
             app:layout_constraintStart_toEndOf="@+id/imageView2"
             app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
         <LinearLayout
-            android:orientation="horizontal"
+            android:id="@+id/linearLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
+            android:orientation="horizontal"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView2">
 
             <Button
-                android:textColor="@color/colorPrimary"
-                android:background="@drawable/bt_uninstall_background"
-                android:text="@string/uninstall"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_marginEnd="7.5dp"
                 android:layout_weight="1"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
+                android:background="@drawable/bt_uninstall_background"
+                android:text="@string/uninstall"
+                android:textColor="@color/colorPrimary" />
+
             <Button
-                android:text="@string/open"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_marginStart="7.5dp"
                 android:layout_weight="1"
-                android:background="#689F38"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
+                android:background="@drawable/bt_open_background"
+                android:text="@string/open"
+                android:textColor="#fff" />
 
         </LinearLayout>
 
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_margin="20dp"
+            android:background="#7C7C7C"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+        <LinearLayout
+            android:gravity="center"
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/linearLayout2">
+
+            <TextView
+                android:layout_margin="5dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@mipmap/ic_billion"
+                android:gravity="center"
+                android:text="1"
+                android:textSize="35sp" />
+            <TextView
+                android:layout_margin="5dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@mipmap/ic_billion"
+                android:gravity="center"
+                android:text="1"
+                android:textSize="35sp" />
+            <TextView
+                android:layout_margin="5dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@mipmap/ic_billion"
+                android:gravity="center"
+                android:text="1"
+                android:textSize="35sp" />
+            <TextView
+                android:layout_margin="5dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@mipmap/ic_billion"
+                android:gravity="center"
+                android:text="1"
+                android:textSize="35sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_margin="20dp"
+            android:background="#7C7C7C"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.core.widget.NestedScrollView>
