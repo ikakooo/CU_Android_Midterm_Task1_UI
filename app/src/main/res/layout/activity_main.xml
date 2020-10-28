@@ -109,56 +109,145 @@
             app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
         <LinearLayout
-            android:gravity="center"
             android:id="@+id/linearLayout3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
+            android:gravity="center"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/linearLayout2">
 
-            <TextView
-                android:layout_margin="5dp"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:background="@mipmap/ic_billion"
-                android:gravity="center"
-                android:text="1"
-                android:textSize="35sp" />
-            <TextView
-                android:layout_margin="5dp"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:background="@mipmap/ic_billion"
-                android:gravity="center"
-                android:text="1"
-                android:textSize="35sp" />
-            <TextView
-                android:layout_margin="5dp"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:background="@mipmap/ic_billion"
-                android:gravity="center"
-                android:text="1"
-                android:textSize="35sp" />
-            <TextView
-                android:layout_margin="5dp"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:background="@mipmap/ic_billion"
-                android:gravity="center"
-                android:text="1"
-                android:textSize="35sp" />
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="110dp"
+                android:layout_margin="5dp">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@mipmap/ic_billion"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textSize="35sp" />
+
+                <TextView
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center"
+                    android:text="Downloads" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="110dp"
+                android:layout_margin="5dp">
+
+                <FrameLayout
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@mipmap/ic_rating"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="4.5"
+                        android:textColor="#fff"
+                        android:textSize="32sp" />
+
+                    <androidx.appcompat.widget.AppCompatRatingBar
+                        style="?android:attr/ratingBarStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginBottom="10dp"
+                        android:foregroundGravity="bottom"
+                        android:isIndicator="true"
+                        android:numStars="5"
+                        android:progressTint="#fff"
+                        android:rating="4.5"
+                        android:scaleX=".6"
+                        android:scaleY=".6" />
+
+
+                </FrameLayout>
+
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|bottom"
+                    android:drawablePadding="3dp"
+                    android:textSize="15sp"
+                    android:text="@string/_5_400_000"
+                    app:drawableEndCompat="@mipmap/ic_person" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="110dp"
+                android:layout_margin="5dp">
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@mipmap/ic_travel"
+                    android:gravity="center"
+                    android:textSize="35sp" />
+
+                <TextView
+                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center"
+                    android:text="Travel &amp; Local" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="110dp"
+                android:layout_margin="5dp">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@mipmap/ic_similar"
+                    android:gravity="center"
+                    android:textSize="35sp" />
+                <TextView
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center"
+                    android:text="@string/similar" />
+            </FrameLayout>
+
 
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/linearLayout4"
             android:layout_width="match_parent"
             android:layout_height="2dp"
             android:layout_margin="20dp"
             android:background="#7C7C7C"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+            tools:layout_editor_absoluteX="20dp"
+            android:orientation="horizontal" />
+
+        <TextView
+            android:textSize="22sp"
+            android:gravity="center"
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/get_the_latest_google_maps_app"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.core.widget.NestedScrollView>
