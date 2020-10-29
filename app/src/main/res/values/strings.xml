@@ -9,4 +9,11 @@
     <string name="_5_400_000">5,400,000</string>
     <string name="similar">Similar</string>
     <string name="get_the_latest_google_maps_app">Get the latest Google Maps App.</string>
+    <string name="navigate_your_world">Navigate your world faster and easier with Google Maps. Over 220 countries and territories mapped and hundreds of millions of businesses and places on the map. Get real-time GPS navigation, traffic, and transit info, and explore local neighborhoods by knowing where to eat, drink and go - no matter what part of the world you’re in.</string>
+    <string name="read_more">READ MORE</string>
+    <string name="travel_amp_local"><![CDATA[Travel & Local]]></string>
+    <string name="raiting">4.5</string>
+    <string name="downloads">Downloads</string>
+    <string name="dovnload_count">1</string>
+    <string name="todo">TODO</string>
 </resources>
