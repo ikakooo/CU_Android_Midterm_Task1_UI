@@ -310,10 +310,10 @@
             app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
         <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/RecyclerView_ID"
             android:layout_width="match_parent"
-            android:layout_height="150dp"
+            android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
-            android:orientation="horizontal"
             app:layout_constraintTop_toBottomOf="@+id/readMore_textView_ID" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
