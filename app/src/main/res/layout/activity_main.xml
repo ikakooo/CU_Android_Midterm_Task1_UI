@@ -128,6 +128,7 @@
                 android:layout_margin="5dp">
 
                 <TextView
+                    android:id="@+id/Downloads_TextView_ID"
                     android:layout_width="80dp"
                     android:layout_height="80dp"
                     android:background="@mipmap/ic_billion"
@@ -156,6 +157,7 @@
                     android:orientation="vertical">
 
                     <TextView
+                        android:id="@+id/ratingStars_TextView_ID"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -181,6 +183,7 @@
                 </FrameLayout>
 
                 <TextView
+                    android:id="@+id/personRated_TextView_ID"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center|bottom"
@@ -197,6 +200,7 @@
                 android:layout_margin="5dp">
 
                 <TextView
+                    android:id="@+id/travel_TextView_ID"
                     android:layout_width="80dp"
                     android:layout_height="80dp"
                     android:background="@mipmap/ic_travel"
@@ -204,6 +208,7 @@
                     android:textSize="35sp" />
 
                 <TextView
+                    android:id="@+id/travelString_TextView_ID"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom|center"
@@ -218,6 +223,7 @@
                 android:layout_margin="5dp">
 
                 <TextView
+                    android:id="@+id/similar_TextView_ID"
                     android:layout_width="80dp"
                     android:layout_height="80dp"
                     android:background="@mipmap/ic_similar"
